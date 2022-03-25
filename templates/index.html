@@ -1,0 +1,583 @@
+{% extends './main.html' %}
+
+{% block body %}
+
+
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top">SCRABBLE</a>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-uppercase">
+    <div class="container d-flex align-items-center flex-column">
+        <p id="usernameindex" class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <table id="tableScrabble" width="2000px" height="500px" ; border="0" cellspacing="2" cellpadding="2"
+            bgcolor="#000000">
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="0:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="1:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="2:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="3:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="4:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="5:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="6:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="7:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="8:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="9:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="10:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="11:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="12:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="13:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:0" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:1" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:2" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:3" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:4" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:5" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:6" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:7" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:8" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:9" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:10" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:11" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:12" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:13" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+                <td bgcolor="#ffffff" class="tipo fuego" id="14:14" ondrop="drop(event)" ondragover="allowDrop(event)"
+                    width="120" height="120"></td>
+            </tr>
+        </table>
+        </br>
+        <table width="100%" height="120" ; border="0" cellspacing="2" cellpadding="2" bgcolor="#495057"
+            ondrop="drop(event)" ondragover="allowDrop(event)">
+            <tr>
+                <td id="letters" class="display text-center">
+                </td>
+            </tr>
+        </table>
+        <div class="text-center mt-4 display btn-toolbar" role="toolbar">
+            <div class="btn-group">
+                <button id="btnnext" class="btn btn-xl btn-outline-light marginaux" onclick="next()">
+                    <i class="fa fa-arrow-right me-2 "></i>
+                    NEXT!
+                </button>
+            </div>
+        </div>
+</header>
+<!-- Footer-->
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Location-->
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Missing letters</h4>
+                <p id="missingletters" class="lead mb-0">
+
+                </p>
+            </div>
+            <!-- Footer Social Icons-->
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">PLAY POINTS</h4>
+                <p id="actualpoints" class="lead mb-0">
+
+                </p>
+            </div>
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">PLAYER ONE SCORE</h4>
+                <p class="lead mb-0">
+                    0
+                </p>
+            </div>
+            <!-- Footer About Text-->
+            <div class="col-lg-3">
+                <h4 class="text-uppercase mb-4">PLAYER TWO SCORE</h4>
+                <p class="lead mb-0">
+                    0
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-confirm modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Players</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <input id="user1" type="text" class="form-control" name="username" placeholder="
+                            Enter player 1 name" required="required">
+                    </div>
+                    <div class="input-group">
+                        <input id="user2" type="text" class="form-control" name="username" placeholder="
+                            Enter player 2 name" required="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button onclick="newGame()" type="submit" class="btn btn-primary btn-block btn-lg">PLAY</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
